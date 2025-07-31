@@ -1,0 +1,20 @@
+dsivaji@Dineshs-MacBook-Pro bert-large-NER % md5sum model.safetensors_splitted/model.safetensors
+6c773ae1b909b8e921ea9bb14f92e0b0  model.safetensors_splitted/model.safetensors
+dsivaji@Dineshs-MacBook-Pro bert-large-NER % md5sum pytorch_model.bin_splitted/pytorch_model.bin
+ee430ca310f5ba90bd47579de4e232af  pytorch_model.bin_splitted/pytorch_model.bin
+dsivaji@Dineshs-MacBook-Pro bert-large-NER % md5sum flax_model.msgpack_splitted/flax_model.msgpack
+d123be03eb9b299993eeafb178763f8c  flax_model.msgpack_splitted/flax_model.msgpack
+dsivaji@Dineshs-MacBook-Pro bert-large-NER % md5sum tf_model.h5_splitted/tf_model.h5
+3967e2c546b52b00bb2fbb52800a1b43  tf_model.h5_splitted/tf_model.h5
+dsivaji@Dineshs-MacBook-Pro bert-large-NER % md5sum onnx/model.onnx_splitted/model.onnx
+260dd660eb2e18d21d3a05719fba52fe  onnx/model.onnx_splitted/model.onnx
+dsivaji@Dineshs-MacBook-Pro bert-large-NER % 
+
+
+cat pytorch_model.bin_splitted/pytorch_model.bin.part-* > pytorch_model.bin
+cat model.safetensors_splitted/model.safetensors.part-* > model.safetensors
+cat tf_model.h5_splitted/tf_model.h5.part-* > tf_model.h5
+cat flax_model.msgpack_splitted/flax_model.msgpack.part-* > flax_model.msgpack
+cat model.onnx_splitted/model.onnx.part-* > model.onnx
+
+
